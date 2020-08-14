@@ -7,15 +7,23 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
+
+:root {
+  /*--light-green: #cb753d; //orange clair*/
+  --light-green: #9CB271; /*vert clair*/
+  --light-orange: #CB753D;
+}
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
+  /*color: #80925C*/
   background: #fff;
 }
 
@@ -47,13 +55,13 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: var(--light-green);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F14E95;
+  color: var(--light-green);
   outline: none;
   text-decoration: none;
 }
@@ -71,27 +79,30 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F14E95;
+  background: var(--light-green);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F14E95;
+  background: var(--light-green);
 }
 
 ::selection {
   color: #fff;
-  background: #F14E95;
+  background: var(--light-green);
 }
 
+.anchor { padding-top: 80px; }
+
 .fh5co-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -103,7 +114,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Melbourne", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -196,7 +207,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #F14E95;
+  color: var(--light-green);
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
@@ -768,7 +779,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: var(--light-green);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -787,7 +798,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  color: var(--light-green);
   position: absolute;
   left: 0;
   top: .05em;
@@ -844,7 +855,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Limelight", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -879,7 +890,7 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #F14E95;
+  color: var(--light-green);
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -942,7 +953,8 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  /*background: rgba(241, 78, 149, 0.8);*/
+  background: var(--light-orange);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1043,7 +1055,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: var(--light-green);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1065,8 +1077,8 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  font-family: "Melbourne", Arial, serif;
+  color: var(--light-green);
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1159,7 +1171,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #F14E95;
+  color: var(--light-green);
 }
 .feature-center p, .feature-center h3 {
   margin-bottom: 30px;
@@ -1181,8 +1193,8 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  color: var(--light-green);
+  font-family: "Melbourne", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1216,7 +1228,7 @@ form label {
   display: block;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
+  color: var(--light-green);
   font-weight: 300;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
@@ -1308,7 +1320,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #F14E95;
+  color: var(--light-green);
 }
 .feature-left .feature-copy {
   float: left;
@@ -1374,7 +1386,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: var(--light-green);
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1418,7 +1430,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid var(--light-green);
 }
 
 #fh5co-offcanvas {
@@ -1671,9 +1683,9 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: var(--light-green);
   color: #fff;
-  border: 2px solid #F14E95;
+  border: 2px solid var(--light-green);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f366a3 !important;
@@ -1681,11 +1693,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: var(--light-green);
+  border: 2px solid var(--light-green);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
+  background: var(--light-green);
   color: #fff;
 }
 
@@ -1815,7 +1827,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: var(--light-green);
 }
 
 .row-pb-md {
@@ -1838,6 +1850,15 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+    color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
