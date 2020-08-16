@@ -25,7 +25,8 @@
 :root {
   --light-green: #9CB271; /*vert clair*/
   --light-orange: #CB753D;
-  --dark-orange: #A65D2D
+  --dark-orange: #A65D2D;
+  --dark-green: #1C3A13;
 }
 
 html{scroll-behavior:smooth}
@@ -336,7 +337,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -740,13 +741,13 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 0 0 7px 7px;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   #fh5co-gallery-list li a .case-studies-summary {
     bottom: 1em;
     left: 1em;
     right: 1em;
   }
-}
+}*/
 #fh5co-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -887,7 +888,7 @@ form label {
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
-  margin-bottom: 0px;
+  margin-bottom: 60px;
   font-size: 100px;
   line-height: 1;
   font-family: "organique", Arial, serif;
@@ -896,14 +897,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1037,6 +1038,39 @@ form label {
   /* words */
 }
 
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    width: 60px;
+    height: 60px;
+  }
+  .simply-countdown > .simply-section > div {
+    height: 60px;
+    width: 60px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 18px;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section {
+    width: 40px;
+    height: 40px;
+  }
+  .simply-countdown > .simply-section > div {
+    height: 40px;
+    width: 40px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 12px;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 5px;
+  }
+}
+
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
@@ -1072,7 +1106,7 @@ form label {
     align-items: center;
 }
 #about h3 {
-  color: var(--light-green);
+  color: var(--dark-green);
 }
 #about {
   padding-bottom: 0;
