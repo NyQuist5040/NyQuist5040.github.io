@@ -253,9 +253,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   position: relative;
 }
 
@@ -325,8 +325,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-cover {
   height: 900px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-repeat: repeat;
   position: relative;
   width: 100%;
 }
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  /*background: rgba(0, 0, 0, 0.5);*/
+  background: rgba(0, 0, 0, 0.7);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -1101,23 +1101,33 @@ form label {
   background: rgba(0, 0, 0, 0.04);
 }
 
-#about .location-body {
+
+#about .location-img {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
+#about .vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+#about .vbottom {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+}
+
 #about h3 {
   color: var(--dark-green);
 }
 #about {
   padding-bottom: 0;
 }
-#about .location-img {
-    display: flex;
-    align-items: flex-end;
-}
 #about div {
   background-color: white;
 }
+
+
 
 .couple-wrap {
   width: 90%;
@@ -1429,13 +1439,13 @@ form label {
 #fh5co-started {
   position: relative;
 }
-#fh5co-started .overlay {
+.fh5co-bg .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
