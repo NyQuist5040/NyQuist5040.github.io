@@ -54,10 +54,10 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #page {
+/*.offcanvas #page {
   overflow: hidden;
   position: absolute;
-}
+}*/
 .offcanvas #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
@@ -1535,13 +1535,12 @@ form label {
 }
 
 #fh5co-offcanvas {
-  position: absolute;
+  position: fixed;
   z-index: 1901;
   width: 270px;
   background: black;
   top: 0;
   right: 0;
-  top: 0;
   bottom: 0;
   padding: 45px 40px 40px 40px;
   overflow-y: auto;
