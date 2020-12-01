@@ -735,20 +735,20 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.5);
 }
 
-#room-details-1, #room-details-2, #room-details-3, #room-details-4, #framaform {
+#room-details-1, #room-details-2, #room-details-3, #room-details-4 {
   display: none;
 }
 
 #fh5co-gallery-list li a .case-studies-summary {
   width: auto;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 0 2em 2em 2em;
+  padding: 1em 2em 0 2em;
   position: absolute;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 0 0 7px 7px;
+  border-radius: 7px 7px 0 0;
 }
 /*@media screen and (max-width: 768px) {
   #fh5co-gallery-list li a .case-studies-summary {
@@ -1318,6 +1318,8 @@ form label {
 }
 .fh5co-heading p {
   font-size: 18px;
+  /*letter-spacing: 2px;*/
+  font-weight: 400;
   line-height: 1.5;
   color: #828282;
 }
@@ -1979,13 +1981,17 @@ form label {
   color: var(--light-orange);
 }
 
-.dark p {
-  color: #BBB
+.dark .fh5co-heading p {
+  color: var(--light-orange);
 }
 
 .timeline-heading h3 {
   margin: 0;
   font-size: 40px;
+}
+
+.embed-responsive-10by3 {
+   padding-top: 80vh;
 }
 
 /*# sourceMappingURL=style.css.map */
