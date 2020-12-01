@@ -236,7 +236,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
 					<h2>Logement</h2>
-					<p>Après le dîner et la soirée, il sera possible pour tout le monde de dormir sur place dans l'une de 4 options de nuitées disponibles, vous serez même ainsi déjà sur place pour le brunch du dimanche&nbsp;!</p>
+					<p>Après le dîner et la soirée, il sera possible pour tout le monde de dormir sur le domaine dans l'une de 4 options de nuitée disponibles, vous serez même ainsi déjà sur place pour le brunch du dimanche&nbsp;!</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -309,8 +309,11 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-					<button type="submit" class="btn btn-block btn-primary">Aller au formulaire</button>
+					<button onclick="toggle5()" type="submit" class="btn btn-block btn-primary">Aller au formulaire</button>
 				</div>
+			</div>
+			<div id="framaform" class="embed-responsive embed-responsive-4by3">
+  			<iframe class="embed-responsive-item" src="https://framaforms.org/quentin-et-lucille-marie-rsvp-1606828848" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -420,6 +423,14 @@
 	}
 	function toggle4() {
 		var x = document.getElementById("room-details-4");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	}
+	function toggle5() {
+		var x = document.getElementById("framaform");
 		if (x.style.display === "block") {
 			x.style.display = "none";
 		} else {
