@@ -1977,12 +1977,28 @@ form label {
     color: white;
 }
 
+.dark a {
+  color: var(--light-orange);
+}
+
 .dark span {
   color: var(--light-orange);
 }
 
 .dark .fh5co-heading p {
-  color: var(--light-orange);
+  /*color: var(--dark-orange);*/
+  /*color : #111111;*/
+  /*border: 1px solid #d4d4d4;*/
+  border: 1px solid #A65D2D;
+  padding: 30px;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: #A65D2DAA;*/
 }
 
 .timeline-heading h3 {
