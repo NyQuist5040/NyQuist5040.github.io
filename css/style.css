@@ -10,11 +10,6 @@
   src: url("../fonts/organique-demo/organique DEMO.otf");
   font-weight: normal;
 }
-/*@font-face {
-  font-family: 'Melbourne';
-  src: url("../fonts/melbourne/Melbourne/Melbourne_reg.otf");
-  font-weight: normal;
-}*/
 @font-face {
   font-family: 'Summer';
   src: url("../fonts/Summer/OTF/SummerFont-Light.otf");
@@ -669,7 +664,7 @@ h1, h2, h3, h4, h5, h6, figure {
     right: auto;
   }
 }
-#fh5co-gallery-list {
+#rooms-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -684,7 +679,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   width: 100%;
 }
-#fh5co-gallery-list li {
+#rooms-list li {
   display: block;
   padding: 0;
   margin: 0 0 10px 1%;
@@ -702,11 +697,11 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-gallery-list li {
+  #rooms-list li {
     margin-left: 0;
   }
 }
-#fh5co-gallery-list li a {
+#rooms-list li a {
   min-height: 400px;
   padding: 2em;
   position: relative;
@@ -714,7 +709,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   cursor: pointer;
 }
-#fh5co-gallery-list li a:before {
+#rooms-list li a:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -731,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px;
   background: rgba(0, 0, 0, 0.2);
 }
-#fh5co-gallery-list li a:hover:before {
+#rooms-list li a:hover:before {
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -739,7 +734,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: none;
 }
 
-#fh5co-gallery-list li a .case-studies-summary {
+#rooms-list li a .case-studies-summary {
   width: auto;
   top: 0;
   left: 0;
@@ -751,51 +746,51 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px 7px 0 0;
 }
 /*@media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary {
+  #rooms-list li a .case-studies-summary {
     bottom: 1em;
     left: 1em;
     right: 1em;
   }
 }*/
-#fh5co-gallery-list li a .case-studies-summary span {
+#rooms-list li a .case-studies-summary span {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
   color: var(--light-green);
 }
-#fh5co-gallery-list li a .case-studies-summary p {
+#rooms-list li a .case-studies-summary p {
   color: rgba(255, 255, 255, 0.7);
 }
-#fh5co-gallery-list li a .case-studies-summary h2 {
+#rooms-list li a .case-studies-summary h2 {
   color: #fff;
   margin-bottom: 10px;
   font-size: 40px;
 }
 /*@media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary h2 {
+  #rooms-list li a .case-studies-summary h2 {
     font-size: 30px;
   }
 }*/
-#fh5co-gallery-list li.one-third {
+#rooms-list li.one-third {
   width: 32.3%;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li.one-third {
+  #rooms-list li.one-third {
     width: 49%;
   }
 }
 @media screen and (max-width: 480px) {
-  #fh5co-gallery-list li.one-third {
+  #rooms-list li.one-third {
     width: 100%;
   }
 }
 
-#fh5co-gallery-list li.one-half {
+#rooms-list li.one-half {
   width: 49%;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li.one-half {
+  #rooms-list li.one-half {
     width: 100%;
   }
 }
@@ -1092,7 +1087,7 @@ form label {
 #fh5co-event,
 #fh5co-couple-story,
 #fh5co-couple,
-#fh5co-gallery,
+#rooms,
 .fh5co-section {
   padding: 80px 0;
   clear: both;
@@ -1105,7 +1100,7 @@ form label {
   #fh5co-event,
   #fh5co-couple-story,
   #fh5co-couple,
-  #fh5co-gallery,
+  #rooms,
   .fh5co-section {
     padding: 80px 0;
   }
